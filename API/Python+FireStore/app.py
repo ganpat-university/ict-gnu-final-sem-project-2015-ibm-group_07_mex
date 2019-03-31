@@ -97,7 +97,7 @@ def get_all_claim():
     return jsonify({'result' : result})
     #return make_response(dumps(result))
 @app.route('/claim/<email>', methods=['GET'])
-def get_one_claim(name):
+def get_one_claim(email):
     output="Not Found"
     claim_ref = db.collection('claims').where('email', '==', email).get()
     # docs = claim_ref.where(u'name', '==','het' ).get()
