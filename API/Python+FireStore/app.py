@@ -99,7 +99,7 @@ def get_all_claim():
 @app.route('/claim/<email>', methods=['GET'])
 def get_one_claim(name):
     output="Not Found"
-    claim_ref = db.collection('claims').where(u'email', u'==', email).get()
+    claim_ref = db.collection('claims').where('email', '==', email).get()
     # docs = claim_ref.where(u'name', '==','het' ).get()
     result=[]
     for doc in claim_ref:
