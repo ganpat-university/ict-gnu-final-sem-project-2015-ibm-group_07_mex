@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Claims" android:id="@+id/claimtitle">
+            <menu android:checkableBehavior="single">
+                <item
+                    android:id = "@+id/home"
+                    android:title="@string/home" />
+
+                <item
+                    android:id = "@+id/claim_now"
+                    android:title="@string/claim_now" />
+                <item
+                    android:id = "@+id/approved_claims"
+                    android:title="@string/approved_claims" />
+
+                <item
+                    android:id = "@+id/disapproved_claims"
+                    android:title="@string/disapproved_claims" />
+            </menu>
+        </item>
+
+<item android:title="Settings">
+    <menu android:checkableBehavior="single">
+        <item
+            android:id = "@+id/rpass"
+            android:title="@string/rpass"/>
+
+        <item
+            android:id = "@+id/logout"
+            android:title="@string/logout" />
+    </menu>
+</item>
+
+    </group>
+
+</menu>

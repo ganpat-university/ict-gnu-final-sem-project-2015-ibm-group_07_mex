@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Claim_Now">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Name :"
+        android:textSize="24sp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/UniName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="No Text"
+        android:textSize="24sp"
+        android:layout_marginStart="200dp"/>
+
+
+    <!--Description-->
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:ems="13"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--Business category dropdown-->
+    <Spinner
+        android:id="@+id/buscateg_spinner"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="335dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+
+    <!--Submit button-->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:onClick="SubmitBtnClicked"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/s_rounded_button_effect"
+        />
+
+</RelativeLayout>

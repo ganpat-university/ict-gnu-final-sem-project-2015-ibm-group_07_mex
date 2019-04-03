@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Welcome to Mex"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+    <!--Username-->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:ems="13"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--Password-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:ems="13"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/sbmtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:onClick="SubmitButtonClicked"
+        android:text="Submit"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/s_rounded_button_effect"
+        />
+
+    <!--Forgot password text-->
+    <TextView
+        android:id="@+id/forgot_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="Forgot Password? Reset"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--Forgot password link-->
+    <TextView
+        android:id="@+id/fpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/forgot_pwd"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="500dp"
+        android:onClick="forgot_pwd"
+        android:text="here"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <!--Signup text-->
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="Don't have an account yet? Signup"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--Signup link-->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_marginTop="550dp"
+        android:text="here"
+        android:onClick="Signup"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+</RelativeLayout>

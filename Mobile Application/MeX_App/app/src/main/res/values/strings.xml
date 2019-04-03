@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MeX</string>
+
+    <!--Spinner array-->
+    <string-array name="bcat_array">
+        <item>All Claims</item>
+        <item>Transportation</item>
+        <item>Food</item>
+        <item>Rent</item>
+    </string-array>
+
+    <!--Spinner array-->
+    <string-array name="bcat_array_CN">
+        <item>Transportation</item>
+        <item>Food</item>
+        <item>Rent</item>
+    </string-array>
+
+    <string name="drawer_header_text">Mex</string>
+
+    <!--Employee homepage-->
+    <string name="home">Home</string>
+    <string name="claim_now">Claim Now</string>
+    <string name="rpass">Reset Password</string>
+    <string name="approved_claims">Approved Claims</string>
+    <string name="disapproved_claims">Disapproved Claims</string>
+    <string name="logout">Logout</string>
+
+    <!--Manager homepage-->
+    <string name="approve_now">Approve Now</string>
+
+    <string name="action_settings">Action_Settings</string>
+</resources>

@@ -1,0 +1,4 @@
+#Fri Mar 22 13:53:54 IST 2019
+base.0=D\:\\Project\\The_App\\MeX_App\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex
